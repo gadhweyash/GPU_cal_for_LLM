@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPU Memory Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>GPU Memory Calculator</h2>
+        <label for="params">Total Parameters (in Billion):</label>
+        <input type="number" id="params" placeholder="e.g., 7">
+
+        <label for="bits">Select Quantization Bits:</label>
+        <select id="bits">
+            <option value="32">32-bit</option>
+            <option value="16">16-bit</option>
+            <option value="8">8-bit</option>
+            <option value="4">4-bit</option>
+        </select>
+
+
+        <button onclick="calculateMemory()">Calculate</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
